@@ -33,6 +33,7 @@ jobs:
         working-directory: frontend
         run: |
           yarn install --frozen-lockfile
+          yarn locale-compile
           yarn build
 
       - name: Prepare image name and build arguments
